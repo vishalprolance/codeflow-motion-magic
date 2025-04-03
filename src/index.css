@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +101,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.typing-cursor::after {
+  content: '|';
+  @apply animate-type-cursor;
+}
+
+.tech-gradient {
+  background: linear-gradient(135deg, #1A1F2C 0%, #252B42 100%);
+}
+
+.techtheme-text-gradient {
+  @apply bg-gradient-to-r from-techTheme-vibrant-purple to-techTheme-bright-blue bg-clip-text text-transparent;
 }
